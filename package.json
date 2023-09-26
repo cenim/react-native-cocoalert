@@ -1,6 +1,7 @@
 {
-  "name": "mdalert",
+  "name": "cocoalert",
   "version": "1.0.0",
+  "description": "A customizable alert component for react native projects",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -8,14 +9,27 @@
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
+  "keywords": [
+    "alert",
+    "notification",
+    "react-native",
+    "expo"
+  ],
+  "author": "Christopher Enim",
+  "license": "MIT",
   "dependencies": {
-    "expo": "~49.0.11",
-    "expo-status-bar": "~1.6.0",
     "react": "18.2.0",
     "react-native": "0.72.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },
-  "private": true
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cenim/react-native-cocoalert"
+  },
+  "bugs": {
+    "url": "https://github.com/cenim/react-native-cocoalert/issues"
+  },
+  "homepage": "https://github.com/cenim/react-native-cocoalert"
 }
