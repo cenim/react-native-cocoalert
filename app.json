@@ -1,30 +1,25 @@
 {
-  "expo": {
-    "name": "CocoAlert",
-    "slug": "CocoAlert",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
-  }
+  "name": "react-native-cocoalert",
+  "version": "1.0.0",
+  "description": "A customizable alert component for react native projects",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cenim/react-native-cocoalert.git"
+  },
+  "keywords": [
+    "alert",
+    "notification",
+    "react-native",
+    "expo"
+  ],
+  "author": "Christopher Enim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cenim/react-native-cocoalert/issues"
+  },
+  "homepage": "https://github.com/cenim/react-native-cocoalert#readme"
 }
