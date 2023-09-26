@@ -1,9 +1,11 @@
+import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
 import { View, Text, Modal, TouchableOpacity, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import { AntDesign, FontAwesome } from '@expo/vector-icons';
 
-const CocoAlert = ({ visible, message, onClose, type }) => {
+const CocoAlert = ({ visible, title, message, onClose, type }) => {
 
     return (
         <Modal
@@ -14,11 +16,14 @@ const CocoAlert = ({ visible, message, onClose, type }) => {
         >
             <View style={styles.centeredView}>
                 <View style={styles.modalView}>
+
                     {
                         type == "error" && (
                             <View style={{ flexDirection: 'column', width: '100%' }}>
                                 <AntDesign name='closecircleo' size={30} color={'red'} style={styles.icon} />
                                 <Text style={styles.errorText}>{'Error'}</Text>
+                                <Text style={styles.modalTitle}>{title}</Text>
+
                                 <Text style={styles.modalText}>{message}</Text>
 
                                 <TouchableOpacity
@@ -35,7 +40,7 @@ const CocoAlert = ({ visible, message, onClose, type }) => {
                             <View style={{ flexDirection: 'column', width: '100%' }}>
                                 <AntDesign name='infocirlceo' size={30} color={'#00BCD4'} style={styles.icon} />
 
-                                {/* <Text style={styles.warningText}>{'Warning'}</Text> */}
+                                <Text style={styles.modalTitle}>{title}</Text>
                                 <Text style={styles.modalText}>{message}</Text>
 
                                 <TouchableOpacity
@@ -51,8 +56,9 @@ const CocoAlert = ({ visible, message, onClose, type }) => {
                         type == "warning" && (
                             <View style={{ flexDirection: 'column', width: '100%' }}>
                                 <AntDesign name='warning' size={30} color={'#FFC107'} style={styles.icon} />
-                                {/* <Text style={styles.errorText}>{'Error'}</Text> */}
                                 <Text style={styles.warningText}>{'Warning'}</Text>
+                                <Text style={styles.modalTitle}>{title}</Text>
+
                                 <Text style={styles.modalText}>{message}</Text>
 
                                 <TouchableOpacity
@@ -68,6 +74,10 @@ const CocoAlert = ({ visible, message, onClose, type }) => {
                         type == "success" && (
                             <View style={{ flexDirection: 'column', width: '100%' }}>
                                 <AntDesign name='checkcircleo' size={30} color={'#32CD32'} style={styles.icon} />
+                                <Text style={styles.successText}>{'Success'}</Text>
+
+                                <Text style={styles.modalTitle}>{title}</Text>
+
                                 <Text style={styles.modalText}>{message}</Text>
 
                                 <TouchableOpacity
@@ -80,7 +90,6 @@ const CocoAlert = ({ visible, message, onClose, type }) => {
                         )
                     }
 
-                    {/* <Text style={styles.modalTitle}>{title}</Text> */}
 
                 </View>
             </View>
@@ -106,14 +115,15 @@ const styles = StyleSheet.create({
     modalView: {
         backgroundColor: 'white',
         borderRadius: 10,
-        width: '65%',
+        width: '69%',
         alignItems: 'center',
         elevation: 5,
     },
     modalTitle: {
-        fontSize: 20,
-        marginBottom: 10,
-        fontWeight: 'bold',
+        fontSize: 18,
+        marginTop: 10,
+        alignSelf: 'center',
+        color: '#000'
     },
     errorText: {
         color: 'salmon',
@@ -126,6 +136,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center'
 
 
+
     },
     warningText: {
         color: '#FFC107',
@@ -136,7 +147,8 @@ const styles = StyleSheet.create({
         padding: 10,
         textAlign: 'center',
         borderRadius: 10,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        fontWeight: 'bold'
 
     },
     infoText: {
@@ -147,7 +159,8 @@ const styles = StyleSheet.create({
         borderColor: '#00BCD4',
         padding: 10,
         borderRadius: 10,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        fontWeight: 'bold'
 
     },
     successText: {
@@ -162,11 +175,12 @@ const styles = StyleSheet.create({
 
     },
     modalText: {
-        fontSize: 17,
+        fontSize: 14,
         marginBottom: 20,
         textAlign: 'center',
         padding: 10,
-        color: '#000'
+        color: '#000',
+        fontWeight: '300'
     },
     modalButton: {
         paddingVertical: 10,
@@ -180,7 +194,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 16,
         width: '100%',
-        textAlign: 'center',    
+        textAlign: 'center',
         fontWeight: 'bold',
 
     },
