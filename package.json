@@ -1,6 +1,6 @@
 {
-  "name": "cocoalert",
-  "version": "1.0.0",
+  "name": "react-native-cocoalert",
+  "version": "1.0.1",
   "description": "A customizable alert component for react native projects",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cenim/react-native-cocoalert"
+    "url": "git+https://github.com/cenim/react-native-cocoalert.git"
   },
   "bugs": {
     "url": "https://github.com/cenim/react-native-cocoalert/issues"
