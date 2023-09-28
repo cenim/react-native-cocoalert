@@ -1,9 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-
 import React from 'react';
 import { View, Text, Modal, TouchableOpacity, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
-import { AntDesign, FontAwesome } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 
 const CocoAlert = ({ visible, title, message, onClose, type }) => {
 
