@@ -1,6 +1,6 @@
 {
   "name": "react-native-cocoalert",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A customizable alert component for react native projects",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.72.4"
-  },
+   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },

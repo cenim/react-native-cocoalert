@@ -1,6 +1,6 @@
 {
   "name": "react-native-cocoalert",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A customizable alert component for react native projects",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
