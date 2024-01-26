@@ -17,7 +17,7 @@ yarn add react-native-cocoalert
 ## Usage 
 
 ```javascript
-import CocoAlert from 'react-native-cocoalert';
+import CocoAlert from 'react-native-cocoalert/CocoAlert';
 
  <CocoAlert
 visible={true}
