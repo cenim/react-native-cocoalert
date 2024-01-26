@@ -35,7 +35,7 @@ onClose={() => {
 import React, { useState } from "react";
 import { View, Text, StyleSheet } from 'react-native';
 // import CocoAlert from "../utils/CocoAlert";
-import CocoAlert from "react-native-cocoalert";
+import CocoAlert from "react-native-cocoalert/CocoAlert";
 
 const TestCocoAlert = () => {
     const [showAlert, setShowAlert] = useState(false);
